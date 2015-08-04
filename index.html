@@ -9,9 +9,11 @@
 
 		<link type="text/css" rel="stylesheet" href="css/demo.css" />
 		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
-
+		<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css">
+        	<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+	
 		<script type="text/javascript">
 			$(function() {
 				$('nav#menu').mmenu({
@@ -43,26 +45,60 @@
 				});
 			});
 		</script>
+
+
+
+		<script type="text/javascript">
+    
+function inicio () 
+{
+
+
+    $("#centro").load("paginas/inicio/formulario.html");
+    
+}
+
+
+function mensajes () 
+{
+
+
+    $("#centro").load("paginas/mensajes/formulario.html");
+    
+}
+
+function contactanos () 
+{
+
+
+    $("#centro").load("modules/contactar/formulario.html");
+    
+}
+
+
+
+</script>
 	</head>
 	<body>
-		<div id="page">
+<div  data-role="page" id="page">
+
 			<div class="header">
 				<a href="#menu"></a>
 				FGA.
 			</div>
-			<div class="content">
+			<div class="content" id="centro">
 				
-				contenido
 
 			</div>
 			<nav id="menu">
 				<ul>
-					<li><a href="#">Inicio</a></li>
+					<li><a href="#" onclick="inicio()">Inicio</a></li>
 					<li><a href="#">Datos Personales</a>
 						<ul>
-							<li><a href="#">Perfil</a></li>
+							<li><a href="perfil.html">Perfil</a></li>
 							<li><a href="#">Correo</a></li>
 							<li><a href="#">Telefono</a></li>
+                            <li><a href="#">Cambiar contraseña</a></li>
 						</ul>
 					</li>
 
@@ -77,7 +113,7 @@
 
 							</li>
 							<li><a href="#">Mis Pronosticos</a></li>
-							<li><a href="#"> Mensajes </a></li>
+							<li><a href="#" onclick="mensajes()"> Mensajes </a></li>
 						</ul>
 					</li>
 
@@ -85,6 +121,20 @@
 					<li><a href="#">Salir</a></li>
 				</ul>
 			</nav>
+			
+			
+            
+            
+            
+            
 		</div>
+
+
+	
+        
+        
+        
+        
+        
 	</body>
 </html>
