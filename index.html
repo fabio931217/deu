@@ -1,184 +1,40 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="author" content="www.frebsite.nl" />
-		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
-
-		<title>jQuery.mmenu demo</title>
-
-
-<link rel="stylesheet" href="css/chosen.css">
-
-   <script type="text/javascript" src="js/jquery/jquery-1.10.2.js"></script> 
-   
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootbox.min.js"></script>    
-    <script type="text/javascript" src="js/jquery/jquery-ui-1.10.4.custom.min.js"></script>
-    <script type="text/javascript" src="js/jquery/validation.js"></script> 
-
-    <script type="text/javascript" src="js/general.js"></script>
-
-    <script type="text/javascript" src="js/grid.js"></script>
-    <script type="text/javascript" src="js/jquery.extra.js?t=1"></script>
-    <script type="text/javascript" src="js/pagina.js" ></script>
-    
-    <script type="text/javascript" src="js/select2/select2.min.js"></script> 
-    <script type="text/javascript" src="js/select2/select2_locale_es.js"></script> 
-    <link type="text/css" rel="stylesheet" href="js/select2/select2.css" />     
-
-    <script type="text/javascript" src="js/formulario_basico.js"></script> 
-    <link type="text/css" rel="stylesheet" href="css/grid/grid.css"/> 
-    <link type="text/css" rel="stylesheet" href="css/custom-theme/jquery-ui-1.10.4.custom.min.css" /> 
-    <link type="text/css" rel="stylesheet" href="css/jquery-ui-extra.css" /> 
-    <link type="text/css" rel="stylesheet" href="css/general.css" />
-    <link type="text/css" rel="stylesheet" href="css/validacion.css" />
-    <link type="text/css" rel="stylesheet" href="css/tablas.css" /> 
-    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
-    <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
-
-
-<link type="text/css" href="css/menu_nuevo3.css" rel="stylesheet" />
-
-
-<link rel="stylesheet" href="css/mensajes.efectos.css" />
-<link rel="stylesheet" href="css/mensajes.diseno.css" id="botonesCSS" />
-<script src="js/alertify.min.js"></script>
-  <!-- This is what you need -->
-<script src="js/sweet-alert.js"></script>
-<link rel="stylesheet" href="css/sweet-alert.css">
-
-<script src="js/mensajes1.js"></script> 
-
-		<link type="text/css" rel="stylesheet" href="css/demo.css" />
-		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
-		<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css">
-        	<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+  <head>
+  <title></title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+	<meta charset="utf-8">
+	<style type="text/css">
 	
-		<script type="text/javascript">
-			$(function() {
-				$('nav#menu').mmenu({
-					extensions	: [ 'effect-slide-menu', 'pageshadow' ],
-					searchfield	: true,
-					counters	: true,
-					navbar 		: {
-						title		: 'Menu'
-					},
-					navbars		: [
-						{
-							position	: 'top',
-							content		: [ 'searchfield' ]
-						}, {
-							position	: 'top',
-							content		: [
-								'prev',
-								'title',
-								'close'
-							]
-						}, {
-							position	: 'bottom',
-							content		: [
-								'<a href="#">Creado Por:</a>',
-								'<a href=#">Fabio Garcia</a>'
-							]
-						}
-					]
-				});
-			});
-		</script>
-
-
-
-		<script type="text/javascript">
-    
-function inicio () 
-{
-
-
-    $("#centro").load("paginas/inicio/formulario.html");
-    
-}
-
-
-function mensajes () 
-{
-
-
-    $("#centro").load("paginas/mensajes/formulario.html");
-    
-}
-
-function contactanos () 
-{
-
-
-    $("#centro").load("modules/contactar/formulario.html");
-    
-}
-
-
-
-</script>
-	</head>
-	<body>
-<div  data-role="page" id="page">
-
-			<div class="header">
-				<a href="#menu"></a>
-				FGA.
-			</div>
-			<div class="content" id="centro" style="width:80%; min-height:400px;border-radius:8px;box-shadow:8px;padding:10px;margin:auto;margin-top:10px;background-color:#fff">
-				
-
-			</div>
-			<nav id="menu">
-				<ul>
-					<li><a href="#" onclick="inicio()">Inicio</a></li>
-					<li><a href="#">Datos Personales</a>
-						<ul>
-							<li><a href="perfil.html">Perfil</a></li>
-							<li><a href="#">Correo</a></li>
-							<li><a href="#">Telefono</a></li>
-                            <li><a href="#">Cambiar contraseña</a></li>
-						</ul>
-					</li>
-
-					<li><a href="#">Partidos</a>
-						<ul>
-							<li><a href="#">Proximos Partidos</a>
-                            <ul>
-									<li><a href="#">Ver</a></li>
-									<li><a href="#">Realizar Pronistocos</a></li>
-									<li><a href="#">Pronosticos en juego</a></li>
-								</ul>
-
-							</li>
-							<li><a href="#">Mis Pronosticos</a></li>
-							<li><a href="#" onclick="mensajes()"> Mensajes </a></li>
-						</ul>
-					</li>
-
-					<li><a href="#">Acerca de</a></li>
-					<li><a href="#">Salir</a></li>
-				</ul>
-			</nav>
-			
-			
-            
-            
-            
-            
-		</div>
-
-
+		#playcontrols {
+			text-align: center;
+			margin-top: 50px;
+		}
+		#playcontrols #activityindicator, #playcontrols #stopbutton {
+			display: none;
+		}
+		
+		#textpositiondiv {
+			margin-top: 100px;
+		}
 	
-        
-        
-        
-        
-        
-	</body>
+	</style>
+	<script type="text/javascript" charset="utf-8" src="scripts/html5audio.js"></script>
+  </head>
+  <body>
+	  <h2>Example HTML5 Audio Streamer app</h2>
+  	  <div id="playcontrols">
+		  <a href="#" id="playbutton" onClick="html5audio.play();return false;"><img src="images/playbutton.png" /></a>
+		  <a href="#" id="activityindicator" onClick="html5audio.stop();return false;"><img src="images/activityindicator.gif" /></a>
+		  <a href="#" id="stopbutton" onClick="html5audio.stop();return false;"><img src="images/stopbutton.png" /></a>
+	  </div>
+	  <div id="textpositiondiv">Time played: <span id="textposition">stopped</span></div>
+	  <script type="text/javascript">
+		  playButton = document.getElementById('playbutton');
+		  stopButton = document.getElementById('stopbutton');
+		  activityIndicator = document.getElementById('activityindicator');
+		  textPosition = document.getElementById('textposition');
+	  </script>
+  </body>
 </html>
